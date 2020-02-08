@@ -9,4 +9,4 @@ function in the Subsession class.
 You can also play through the example game to see a table containing all the pairings across all rounds. Each player will have their group in the current round highlighted in the table, as 
 show below.
 
-![Perfect Stranger Matching Image](https://github.com/cesslab/otree-perfect-stranger-matching/raw/master/perfect_stranger/img/Perfect_Stranger_Matching.png "Perfect Stranger Matching")
+![Perfect Stranger Matching Image](https://github.com/cesslab/otree-perfect-stranger-matching/raw/master/perfect_stranger/game/templates/game/img/Perfect_Stranger_Matching.png "Perfect Stranger Matching")

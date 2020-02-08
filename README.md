@@ -1,6 +1,6 @@
 # oTree Perfect Stranger Matching Example
 
-The puropose of this oTree program is to illustrate a simple implementation of perfect stranger matching, or round robin matching.
+The puropose of this [oTree](https://www.otree.org/) program is to illustrate a simple implementation of perfect stranger matching, or round robin matching.
 
 ![Playing the Game](https://github.com/cesslab/otree-perfect-stranger-matching/raw/master/media/matching.gif "Perfect Stranger Matching")
 

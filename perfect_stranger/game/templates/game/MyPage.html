@@ -1,0 +1,41 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block title %}
+Perfect Stranger Matching
+{% endblock %}
+
+{% block content %}
+    <h3>Round: {{player.round_number}}</h3>
+    <p>Your participant ID is {{player.id_in_subsession}}.</p>
+    <p>You are paired with particpant ID {{other_player.id_in_subsession}}.</p>
+    <p>The table below contains the matching records for all rounds.</p>
+    <table class="table">
+    <thead>
+        <tr>
+        <th>Round</th>
+        {% for group in matrix %}
+        <th>Group {{forloop.counter}}</th>
+        {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for group_matrix in group_matrices %}
+            <tr>
+                <td>{{ forloop.counter }}</td>
+                {% for group in group_matrix %}
+                    <td {% for p in group %} 
+                    {% if p.id_in_subsession == player.id_in_subsession and player.round_number == forloop.parentloop.parentloop.counter %} 
+                        class="table-primary"
+                    {% endif %}
+                    {% endfor %}>{{ group }}
+                    </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+
+    {% next_button %}
+
+{% endblock %}

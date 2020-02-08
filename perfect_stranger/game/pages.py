@@ -7,7 +7,6 @@ class MyPage(Page):
     def vars_for_template(self):
         subsessions = self.session.get_subsessions()
         matrices = [subsession.get_group_matrix() for subsession in subsessions]
-        print(matrices)
         return { 
             'other_player': self.player.get_others_in_group()[0],
             'matrix': self.subsession.get_group_matrix(),

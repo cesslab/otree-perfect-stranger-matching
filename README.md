@@ -11,6 +11,8 @@ The code for implementing the perfect stranger matching is located in the [Sessi
 
 ```git clone https://github.com/cesslab/otree-perfect-stranger-matching ```
 
+If you are unfamiliar with git and github you can get started by watching [An Introduction to Git and GitHub, by Brian Yu](https://youtu.be/MJUJ4wbFm_A).
+
 In the [project directory](https://github.com/cesslab/otree-perfect-stranger-matching) run the pipenv install command to install all the project dependencies. [Pipenv](https://pypi.org/project/pipenv/) is used to provide a virtual environment for managing python project dependencies (see [this tutorial](https://thoughtbot.com/blog/how-to-manage-your-python-projects-with-pipenv) for more information).
 
 ```pipenv install```
